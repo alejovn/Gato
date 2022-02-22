@@ -44,12 +44,6 @@ body{
   78%{background-position: 0 -768px;}
   100%{background-position: -512px -768;}
 }
-
-.fon1{
-  background-color: #fff;
-}
-
-
  .menu-inicio{
    padding: 20px;
  }
@@ -59,15 +53,15 @@ body{
   background-color: #8fdddd;
   width: 340px;
   height: 420px;
-  margin: 0 auto;
+  margin: 5px auto;
   border-radius: 10px;
  }
  .menu-dos-juego{
   padding-top: 20px;
   background-color: #5eaa7b;
   width: 420px;
-  height: 520px;
-  margin: 0 auto;
+  height: 540px;
+  margin: 5px auto;
   border-radius: 10px;
  }
  

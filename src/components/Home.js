@@ -12,7 +12,7 @@ const Home = () => {
             <span className="l-br">-</span>
             <span className="l-br">-</span>
             <div className = "row">
-                <div className="col-md-4 fon">
+                <div className="col-md-4">
                     <div className="menu-dos">
                         <div className="img-menu">
                             <img src="img/tic-tac-toe.png" />
@@ -30,10 +30,10 @@ const Home = () => {
                         </div>
                     </div>
                 </div>
-                <div className="col-md-4 fon1">
+                <div className="col-md-4">
                 <Game name1={name1} name2={name2} />
                 </div>
-                <div className="col-md-4 fon2">
+                <div className="col-md-4">
                 <Users name1={name1} name2={name2} setName1={setName1} setName2={setName2} />
                 </div>
             </div>
