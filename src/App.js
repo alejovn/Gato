@@ -24,7 +24,7 @@ function App() {
             <Home />
           </div>
           <div className="col-md-6">
-            <BrowserRouter>
+            <BrowserRouter basename={public.env.PUBLIC_URL}>
               <Routes>
                 <Route path="/game" element={
                   <Game name1={name1} name2={name2} />
