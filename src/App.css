@@ -44,6 +44,7 @@ body{
   78%{background-position: 0 -768px;}
   100%{background-position: -512px -768;}
 }
+
  .menu-inicio{
    padding: 20px;
  }
@@ -60,7 +61,7 @@ body{
   padding-top: 20px;
   background-color: #5eaa7b;
   width: 420px;
-  height: 540px;
+  height: 500px;
   margin: 5px auto;
   border-radius: 10px;
  }
@@ -136,6 +137,6 @@ body{
 @media screen and (max-width: 768px){
   .menu-dos-juego{
     width: 380px;
-    height: 620px;
+    height: 650px;
   }
 }
