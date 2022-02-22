@@ -3,7 +3,8 @@ import Board from '../components/Board'
 import { calculateWinner } from '../helpers';
 const styles = {
     white: '280px',
-    margin: '20px auto'
+    margin: '20px auto',
+    textAlign: 'center'
 }
 const Game = (props) => {
     const [board, setBoard] = useState(Array(9).fill(null))
@@ -55,7 +56,7 @@ const Game = (props) => {
         return (
             <div className="menu-button">
                 <div className="btn-menu arriba">
-                    <button className="btn btn-success" onClick={() => limpiar()}>Nuevo</button>
+                    <button className="btn btn-success" onClick={() => limpiar()}>Limpiar</button>
                 </div>
             </div>
         );
