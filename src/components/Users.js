@@ -9,22 +9,23 @@ const Users = (props) => {
     }
     return (
         <div>
-            <div id="section3" className="menu-inicio">
-                <span className="l-br">-</span>
-                <span className="l-br">-</span>
-                <div className="menu-dos-juego">
+
+            <div className="menu-dos">
+                <div className="form-nombre">
                     <form>
                         <label>Nombre del jugador uno:
                             <input
+                                class="form-control"
                                 type="text"
                                 name="name1"
                                 value={props.name1}
                                 onChange={handleChange}
                             />
                         </label>
-
+                        <span className="l-br">-</span>
                         <label>Nombre del jugador dos:
                             <input
+                                class="form-control"
                                 type="text"
                                 name="name2"
                                 value={props.name2}

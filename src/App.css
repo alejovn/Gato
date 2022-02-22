@@ -1,5 +1,19 @@
 
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+.form-control{
+  text-align: center;
+}
+.form-nombre{
+  width: 60%;
+  margin: 0 auto;
+}
+body{
+  padding: 0px;
+}
 #gato {
   width: 512px;
   height: 256px;
@@ -31,6 +45,10 @@
   100%{background-position: -512px -768;}
 }
 
+.fon1{
+  background-color: #fff;
+}
+
 
  .menu-inicio{
    padding: 20px;
@@ -39,7 +57,7 @@
  .menu-dos{
   padding-top: 20px;
   background-color: #8fdddd;
-  width: 380px;
+  width: 340px;
   height: 420px;
   margin: 0 auto;
   border-radius: 10px;
@@ -47,7 +65,7 @@
  .menu-dos-juego{
   padding-top: 20px;
   background-color: #5eaa7b;
-  width: 480px;
+  width: 420px;
   height: 520px;
   margin: 0 auto;
   border-radius: 10px;
@@ -77,11 +95,6 @@
   margin: 0px auto;
   width: 160px;
   padding: 10px;
-}
-
-#section1{
-  background-image: url("../public/img/React_Banner.png");
-  background-position: center;
 }
 
 .user-X{
