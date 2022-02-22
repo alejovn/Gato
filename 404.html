@@ -1,44 +1,21 @@
 <!DOCTYPE html>
 <html>
-<cabeza>
-    <juego de caracteres meta=" utf-8 ">
-        <title> Aplicaciones de una sola página para páginas de GitHub </ title>
-            <tipo de script=" texto/javascript ">
-                // Aplicaciones de una sola página para páginas de GitHub
-                // Licencia MIT
-                // https://github.com/rafgraph/spa-github-pages
-                // Este script toma la URL actual y convierte la ruta y la consulta
-                // cadena en solo una cadena de consulta, y luego redirige el navegador
-                // a la nueva URL con solo una cadena de consulta y un fragmento hash,
-                // por ejemplo, https://www.foo.tld/one/two?a=b&c=d#qwe, se convierte en
-                // https://www.foo.tld/?/one/two&a=b~and~c=d#qwe
-                // Nota: este archivo 404.html debe tener al menos 512 bytes para que funcione
-                // con Internet Explorer (actualmente es > 512 bytes)
+  <head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+      var pathSegmentsToKeep = 0;
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
 
-                // Si está creando un sitio de Project Pages y NO está usando un dominio personalizado,
-                // luego configure pathSegmentsToKeep en 1 (es posible que los usuarios empresariales deban configurarlo
-                en> 1).
-                // De esta manera, el código solo reemplazará la parte de la ruta de la ruta, y no
-                // el directorio real en el que reside la aplicación, por ejemplo:
-                // https://username.github.io/repo-name/one/two?a=b&c=d#qwe se convierte
-                // https://username.github.io/repo-name/?/one/two&a=b~and~c=d#qwe
-                // De lo contrario, deje pathSegmentsToKeep como 0.
-                var pathSegmentsToKeep = 0 ;
-
-                var l = ventana . ubicación ;
-                yo _ reemplazar (
-                yo _ protocolo + '//' + l . nombre de host + ( l . puerto ? ':' + l . puerto : '' ) +
-                yo _ nombre de ruta dividir ( '/' ) . segmento ( 0 , 1 + rutaSegmentosParaMantener ) . unir ( '/' ) +
-                '/?/' +
-                yo _ nombre de ruta rebanada ( 1 ) . dividir ( '/' ) . segmento ( rutaSegmentosParaGuardar ) . unir (
-                '/' ) . reemplazar ( / & / g , '~y~' ) +
-                ( l . buscar ? '&' + l . buscar . cortar ( 1 ) . reemplazar ( / & / g , '~y~' ) : '' ) +
-                yo _ picadillo
-                ) ;
-
-                </guión>
-</cabeza>
-<cuerpo>
-</cuerpo>
-
+    </script>
+  </head>
+  <body>
+  </body>
 </html>
