@@ -7,8 +7,8 @@ import React, { useState } from 'react';
 import './App.css';
 
 function App() {
-  const [name1, setName1] = useState("");
-  const [name2, setName2] = useState("");
+  const [name1, setName1] = useState("jugador 1");
+  const [name2, setName2] = useState("jugador 2");
   return (
     <div className="App">
       <Navbar />

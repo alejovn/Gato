@@ -14,6 +14,7 @@ const Game = (props) => {
     const [jugador1, setJugador1] = useState(0);
     const [jugador2, setJugador2] = useState(0);
     const [empate, setEmpate] = useState(0);
+    const [juega, setJuega] = useState("");
 
     const handleClick = (i) => {
         const boardCopy = [...board];
@@ -24,6 +25,11 @@ const Game = (props) => {
         setCont(cont + 1);
     }
     useEffect(() => {
+        if(xIsNext===true){
+            setJuega(props.name1)
+        }else{
+            setJuega(props.name2)
+        }
         if (winner == "X") {
             alert("El ganador es X");
             setJugador1(jugador1 + 1);
@@ -62,7 +68,7 @@ const Game = (props) => {
                 <div className="row">
                     <div className="col-md-6">
                         <div className="user-X">
-                            <p>Jugador 1</p>
+                            <p>{props.name1}</p>
                             <div className="img-jugador">
                                 <img src="img/play.png" />
                             </div>
@@ -71,7 +77,7 @@ const Game = (props) => {
                     </div>
                     <div className="col-md-6">
                         <div className="user-0">
-                            <p>Jugador 2</p>
+                            <p>{props.name2}</p>
                             <div className="img-jugador">
                                 <img src="img/play.png" />
                             </div>
@@ -89,7 +95,7 @@ const Game = (props) => {
 
                 <div style={styles}>
                     <p>
-                        {winner ? "Winner: " + winner : "Next Player: " + (xIsNext ? "X" : "O")}
+                    {"Turno de: "+juega}
                     </p>
                     {nuevaPartida()}
                 </div>
