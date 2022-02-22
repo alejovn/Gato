@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/gato/static/css/main.9435be15.css",
-    "main.js": "/gato/static/js/main.34d0b07a.js",
-    "static/js/787.f0cf882a.chunk.js": "/gato/static/js/787.f0cf882a.chunk.js",
-    "index.html": "/gato/index.html",
-    "main.9435be15.css.map": "/gato/static/css/main.9435be15.css.map",
-    "main.34d0b07a.js.map": "/gato/static/js/main.34d0b07a.js.map",
-    "787.f0cf882a.chunk.js.map": "/gato/static/js/787.f0cf882a.chunk.js.map"
+    "main.css": "/Gato/static/css/main.9435be15.css",
+    "main.js": "/Gato/static/js/main.bb8df9e9.js",
+    "static/js/787.f0cf882a.chunk.js": "/Gato/static/js/787.f0cf882a.chunk.js",
+    "index.html": "/Gato/index.html",
+    "main.9435be15.css.map": "/Gato/static/css/main.9435be15.css.map",
+    "main.bb8df9e9.js.map": "/Gato/static/js/main.bb8df9e9.js.map",
+    "787.f0cf882a.chunk.js.map": "/Gato/static/js/787.f0cf882a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9435be15.css",
-    "static/js/main.34d0b07a.js"
+    "static/js/main.bb8df9e9.js"
   ]
 }
