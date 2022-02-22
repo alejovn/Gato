@@ -1,16 +1,17 @@
+import { Link } from "react-scroll";
 const Home = () => {
     return(
-        <div className="menu-inicio">
+        <div id="section1" className="menu-inicio">
             <div className="menu-dos">
                 <div className="img-menu">
                     <img src="img/tic-tac-toe.png" />
                 </div>
                 <div className="menu-button">
                     <div className="btn-menu arriba">
-                        <a href="/game" className="btn btn-primary">Nuevo Juego</a>
+                    <Link to="section2" className="btn btn-primary" smooth={true}><i className='fa fa-home'></i> nuevo Juego</Link>
                     </div>
                     <div className="btn-menu">
-                        <a href="/users" className="btn btn-dark"><i className="fa fa-user"></i> Jugadores</a>
+                    <Link to="section3" className="btn btn-dark" smooth={true}><i className='fa fa-user'></i> Jugadores</Link>
                     </div>
                     <div className="btn-menu">
                         <button className="btn btn-primary">Nuevo Juego</button>

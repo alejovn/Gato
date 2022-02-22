@@ -9,7 +9,7 @@ const Users = (props) => {
     }
     return (
         <div>
-            <div className="menu-inicio">
+            <div id="section3" className="menu-inicio">
                 <div className="menu-dos-juego">
                     <form>
                         <label>Nombre del jugador uno:

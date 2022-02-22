@@ -5,47 +5,36 @@ import Game from './components/Game'
 import Users from './components/Users'
 import React, { useState } from 'react';
 import './App.css';
-import {
-  HashRouter,
-  Route,
-  Routes,
-} from "react-router-dom";
 
 function App() {
   const [name1, setName1] = useState("");
   const [name2, setName2] = useState("");
   return (
     <div className="App">
-
       <Navbar />
       <div className="App_body">
         <div className="row">
-          <div className="col-md-6">
+          <div className="col-md-12">
             <Home />
           </div>
-          <div className="col-md-6">
-          <HashRouter basename={process.env.PUBLIC_URL +  '/' }>
-              <Routes>
-                <Route path="/game" components={
-                  <Game name1={name1} name2={name2} />
-                }
-                />
-                <Route path="/about" element={<About />} />
-                <Route path="/users" element={<Users name1={name1} name2={name2} setName1={setName1} setName2={setName2}/>} />
-              </Routes>
-            </HashRouter>
+        </div>
+        <div className="row">
+          <div className="col-md-12">
+            <Game name1={name1} name2={name2} />
+            <Users name1={name1} name2={name2} setName1={setName1} setName2={setName2} />
+            <About/> 
           </div>
         </div>
-        {/*<div className="row">
+      </div>
+      {/*<div className="row">
           <div className="col-md-12">
           <div className="cont-gato">
             <div id="gato"></div>
           </div>
           </div>
   </div>*/}
-      </div>
 
-    </div>
+    </div >
   );
 }
 

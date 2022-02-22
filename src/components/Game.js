@@ -55,7 +55,7 @@ const Game = (props) => {
         );
     }   
     return (
-        <div className="menu-inicio">
+        <div id="section2" className="menu-inicio">
             <div className="menu-dos-juego">
                 <div className="row">
                     <div className="col-md-6">

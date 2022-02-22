@@ -1,10 +1,9 @@
-
-import React from "react";
+import { Link } from "react-scroll";
 const Navbar = () => {
     return (
         <nav className="navbar navbar-light bg-light fixed-top">
             <div className="container-fluid">
-                <a className="navbar-brand" href="/"><i className="fa fa-gamepad" aria-hidden="true"></i> Gato</a>
+                <Link to="section1" className='navbar-brand' smooth={true}><i className='fa fa-gamepad'></i> Gato</Link>
                 <button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
                     <span className="navbar-toggler-icon"></span>
                 </button>
@@ -27,7 +26,7 @@ const Navbar = () => {
                                 </a>
                                 <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
                                     <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><a className="dropdown-item" href="#">Another action</a></li>
+                                    <li><Link to="section1" className='' smooth={true}><i className='fa fa-home'></i> Home</Link></li>
                                     <li>
                                         <hr className="dropdown-divider" />
                                     </li>
