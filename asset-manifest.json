@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Gato/static/css/main.9435be15.css",
-    "main.js": "/Gato/static/js/main.1c38f528.js",
+    "main.js": "/Gato/static/js/main.6c63d76a.js",
     "static/js/787.f0cf882a.chunk.js": "/Gato/static/js/787.f0cf882a.chunk.js",
     "index.html": "/Gato/index.html",
     "main.9435be15.css.map": "/Gato/static/css/main.9435be15.css.map",
-    "main.1c38f528.js.map": "/Gato/static/js/main.1c38f528.js.map",
+    "main.6c63d76a.js.map": "/Gato/static/js/main.6c63d76a.js.map",
     "787.f0cf882a.chunk.js.map": "/Gato/static/js/787.f0cf882a.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.9435be15.css",
-    "static/js/main.1c38f528.js"
+    "static/js/main.6c63d76a.js"
   ]
 }
