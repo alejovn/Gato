@@ -26,12 +26,12 @@ function App() {
           <div className="col-md-6">
           <Router basename={process.env.PUBLIC_URL}>
               <Routes>
-                <Route exact path="/game" element={
+                <Route path="/game" element={
                   <Game name1={name1} name2={name2} />
                 }
                 />
-                <Route exact path="/about" element={<About />} />
-                <Route exact path="/users" element={<Users name1={name1} name2={name2} setName1={setName1} setName2={setName2}/>} />
+                <Route path="/about" element={<About />} />
+                <Route path="/users" element={<Users name1={name1} name2={name2} setName1={setName1} setName2={setName2}/>} />
               </Routes>
             </Router>
           </div>
