@@ -6,7 +6,7 @@ import Users from './components/Users'
 import React, { useState } from 'react';
 import './App.css';
 import {
-  BrowserRouter,
+  HashRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
@@ -24,7 +24,7 @@ function App() {
             <Home />
           </div>
           <div className="col-md-6">
-            <BrowserRouter basename={public.env.PUBLIC_URL}>
+          <Router>
               <Routes>
                 <Route path="/game" element={
                   <Game name1={name1} name2={name2} />
@@ -33,7 +33,7 @@ function App() {
                 <Route path="/about" element={<About />} />
                 <Route path="/users" element={<Users name1={name1} name2={name2} setName1={setName1} setName2={setName2}/>} />
               </Routes>
-            </BrowserRouter>
+            </Router>
           </div>
         </div>
         {/*<div className="row">
