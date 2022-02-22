@@ -24,9 +24,9 @@ function App() {
             <Home />
           </div>
           <div className="col-md-6">
-          <HashRouter basename={process.env.PUBLIC_URL}>
-              <Routes basename={process.env.PUBLIC_URL}>
-                <Route path="/game" element={
+          <HashRouter basename={process.env.PUBLIC_URL +  '/' }>
+              <Routes>
+                <Route path="/game" components={
                   <Game name1={name1} name2={name2} />
                 }
                 />
