@@ -1,15 +1,17 @@
 const Users = (props) => {
     const handleChange = (e) => {
         const { value } = e.target
-        props.setName1( value )
+        props.setName1(value)
     }
     const handleChange1 = (e) => {
         const { value } = e.target
-        props.setName2( value )
+        props.setName2(value)
     }
     return (
         <div>
             <div id="section3" className="menu-inicio">
+                <span className="l-br">-</span>
+                <span className="l-br">-</span>
                 <div className="menu-dos-juego">
                     <form>
                         <label>Nombre del jugador uno:

@@ -24,23 +24,23 @@ const Game = (props) => {
         setCont(cont + 1);
     }
     useEffect(() => {
-        if (winner=="X"){
+        if (winner == "X") {
             alert("El ganador es X");
-            setJugador1(jugador1+1);
+            setJugador1(jugador1 + 1);
             setCont(0);
         }
-        else if (winner=="O"){
+        else if (winner == "O") {
             alert("El ganador es 0");
-            setJugador2(jugador2+1);
+            setJugador2(jugador2 + 1);
             setCont(0);
-        }else if (cont===9){
+        } else if (cont === 9) {
             alert("Empate");
-            setEmpate(empate+1);
+            setEmpate(empate + 1);
             setCont(0);
         }
-    },winner);
+    }, winner);
 
-    const limpiar = () =>{
+    const limpiar = () => {
         setBoard(Array(9).fill(null));
         setCont(0);
     }
@@ -53,9 +53,11 @@ const Game = (props) => {
                 </div>
             </div>
         );
-    }   
+    }
     return (
         <div id="section2" className="menu-inicio">
+            <span className="l-br">-</span>
+            <span className="l-br">-</span>
             <div className="menu-dos-juego">
                 <div className="row">
                     <div className="col-md-6">
