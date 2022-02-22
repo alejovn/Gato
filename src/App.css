@@ -129,5 +129,6 @@
 @media screen and (max-width: 768px){
   .menu-dos-juego{
     width: 380px;
-   }
+    height: 620px;
+  }
 }
