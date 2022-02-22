@@ -6,7 +6,7 @@ import Users from './components/Users'
 import React, { useState } from 'react';
 import './App.css';
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Route,
   Routes,
 } from "react-router-dom";
