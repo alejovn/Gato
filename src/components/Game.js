@@ -27,9 +27,9 @@ const Game = (props) => {
     }
     useEffect(() => {
         if (xIsNext === true) {
-            setJuega(props.name1)
+            setJuega(props.name1);
         } else {
-            setJuega(props.name2)
+            setJuega(props.name2);
         }
         if (winner == "X") {
             alert("El ganador es: "+props.name1);
@@ -46,12 +46,10 @@ const Game = (props) => {
             setCont(0);
         }
     }, winner);
-
     const limpiar = () => {
         setBoard(Array(9).fill(null));
         setCont(0);
     }
-
     const nuevaPartida = () => {
         return (
             <div className="menu-button">
@@ -62,7 +60,6 @@ const Game = (props) => {
         );
     }
     return (
-
         <div className="menu-dos-juego">
             <div className="row">
                 <div className="col-md-6">

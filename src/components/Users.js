@@ -15,7 +15,7 @@ const Users = (props) => {
                     <form>
                         <label>Nombre del jugador uno:
                             <input
-                                class="form-control"
+                                className="form-control"
                                 type="text"
                                 name="name1"
                                 value={props.name1}
@@ -25,7 +25,7 @@ const Users = (props) => {
                         <span className="l-br">-</span>
                         <label>Nombre del jugador dos:
                             <input
-                                class="form-control"
+                                className="form-control"
                                 type="text"
                                 name="name2"
                                 value={props.name2}
