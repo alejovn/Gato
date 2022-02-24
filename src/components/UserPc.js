@@ -8,7 +8,7 @@ const UserPc = (props) => {
             <span className="l-br">-</span>
             <span className="l-br">-</span>
             <span className="l-br">-</span>
-            <div className="menu-dos">
+            <div className="menu-dos-nombre">
                 <div className="form-nombre">
                     <form>
                         <label>Nombre del jugador uno:

@@ -49,6 +49,15 @@ body{
    padding: 20px;
  }
 
+ .menu-dos-nombre{
+  padding-top: 20px;
+  background-color: #8fdddd;
+  width: 340px;
+  height: 220px;
+  margin: 5px auto;
+  border-radius: 10px;
+ }
+
  .menu-dos{
   padding-top: 20px;
   background-color: #8fdddd;
