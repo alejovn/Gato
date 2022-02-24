@@ -69,7 +69,9 @@ const About = (props) => {
                         : { ...valoresPosicion }
                 )
             );
+            console.log(xIsNext)
         } else {
+            console.log(xIsNext)
             setValoresPosicions(
                 valoresPosicions.map((valoresPosicion) =>
                     valoresPosicion.id === i
@@ -95,16 +97,15 @@ const About = (props) => {
     const lanzarJugador2 = () => {
         try {
             let resultados = [null, null, null, null, null, null, null, null, null];
-            let clonArray = [null, null, null, null, null, null, null, null, null];
-            let con = 0;
             let conClone = 0;
             valoresPosicions.map((valoresPosicion) => {
-                clonArray[con] = valoresPosicion.valor;
-                con++;
-            })
-
-            valoresPosicions.map((valoresPosicion) => {
                 if (valoresPosicion.valor === null) {
+                    let clonArray = [null, null, null, null, null, null, null, null, null];
+                    let con = 0;
+                    valoresPosicions.map((valoresPosicion) => {
+                        clonArray[con] = valoresPosicion.valor;
+                        con++;
+                    })
                     clonArray[conClone] = 'O';
                     resultados[conClone] = calculoMiniMax('O', clonArray);
                 }
@@ -114,21 +115,12 @@ const About = (props) => {
             let min = 9999;
             let pos = -1;
             for (var i = 0; i < resultados.length; i++) {
-                console.log(resultados[i])
                 if (resultados[i] != null && resultados[i] < min) {
                     min = resultados[i];
                     pos = i;
                 }
             }
-            setValoresPosicions(
-                valoresPosicions.map((valoresPosicion) =>
-                    valoresPosicion.id === pos
-                        ? { ...valoresPosicion, valor: "O" }
-                        : { ...valoresPosicion }
-                )
-            );
             handleClick(pos)
-
         } catch (exception) {
             console.log(exception);
         }
