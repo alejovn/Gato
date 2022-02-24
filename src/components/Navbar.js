@@ -1,3 +1,4 @@
+import Home from '../components/Home'
 import { Link } from "react-scroll";
 const Navbar = () => {
     return (
@@ -13,31 +14,22 @@ const Navbar = () => {
                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
-                        <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="/users"><i className="fa fa-users" aria-hidden="true"></i> User</a>
-                            </li>
-                            <li className="nav-item">
-                                <a className="nav-link" href="/about">About</a>
-                            </li>
-                            <li className="nav-item dropdown">
-                                <a className="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
-                                    <li><a className="dropdown-item" href="#">Action</a></li>
-                                    <li><Link to="section1" className='' smooth={true}><i className='fa fa-home'></i> Home</Link></li>
-                                    <li>
-                                        <hr className="dropdown-divider" />
-                                    </li>
-                                    <li><a className="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                        <form className="d-flex">
-                            <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-                            <button className="btn btn-outline-success" type="submit">Search</button>
-                        </form>
+                    <div className="menu-dos">
+                        <div className="img-menu">
+                            <img src="img/tic-tac-toe.png" />
+                        </div>
+                        <div className="menu-button">
+                            <div className="btn-menu arriba">
+                                <Link to="section2" className="btn btn-primary" smooth={true}><i className='fa fa-home'></i> nuevo Juego</Link>
+                            </div>
+                            <div className="btn-menu">
+                                <Link to="section3" className="btn btn-dark" smooth={true}><i className='fa fa-user'></i> Jugadores</Link>
+                            </div>
+                            <div className="btn-menu">
+                                <button className="btn btn-primary">Nuevo Juego</button>
+                            </div>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
