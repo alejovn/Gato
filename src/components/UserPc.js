@@ -6,8 +6,6 @@ const UserPc = (props) => {
     return (
         <div>
             <span className="l-br">-</span>
-            <span className="l-br">-</span>
-            <span className="l-br">-</span>
             <div className="menu-dos-nombre">
                 <div className="form-nombre">
                     <form>

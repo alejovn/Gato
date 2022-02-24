@@ -1,4 +1,3 @@
-import Home from '../components/Home'
 import { Link } from "react-scroll";
 const Navbar = () => {
     return (
@@ -14,22 +13,19 @@ const Navbar = () => {
                         <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
                     <div className="offcanvas-body">
-                    <div className="menu-dos">
-                        <div className="img-menu">
-                            <img src="img/tic-tac-toe.png" />
-                        </div>
-                        <div className="menu-button">
-                            <div className="btn-menu arriba">
-                                <Link to="section2" className="btn btn-primary" smooth={true}><i className='fa fa-home'></i> nuevo Juego</Link>
+                        <div className="menu-dos">
+                            <div className="img-menu">
+                                <img src="img/tic-tac-toe.png" />
                             </div>
-                            <div className="btn-menu">
-                                <Link to="section3" className="btn btn-dark" smooth={true}><i className='fa fa-user'></i> Jugadores</Link>
-                            </div>
-                            <div className="btn-menu">
-                                <button className="btn btn-primary">Nuevo Juego</button>
+                            <div className="menu-button">
+                                <div className="btn-menu arriba">
+                                    <Link to="section1" className="btn btn-primary" smooth={true}>Persona vs Persona</Link>
+                                </div>
+                                <div className="btn-menu">
+                                    <Link to="section2" className="btn btn-dark" smooth={true}>Persona vs Pc</Link>
+                                </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                 </div>
             </div>

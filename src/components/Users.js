@@ -9,7 +9,6 @@ const Users = (props) => {
     }
     return (
         <div>
-
             <div className="menu-dos-nombre">
                 <div className="form-nombre">
                     <form>

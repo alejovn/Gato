@@ -32,12 +32,12 @@ const Game = (props) => {
             setJuega(props.name2);
         }
         if (winner == "X") {
-            alert("El ganador es: "+props.name1);
+            alert("El ganador es: " + props.name1);
             setJugador1(jugador1 + 1);
             setCont(0);
         }
         else if (winner == "O") {
-            alert("El ganador es: "+props.name2);
+            alert("El ganador es: " + props.name2);
             setJugador2(jugador2 + 1);
             setCont(0);
         } else if (cont === 9) {
@@ -90,6 +90,7 @@ const Game = (props) => {
             </div>
 
             <div style={styles}>
+                <p>{"Empates: " + empate}</p>
                 <p>
                     {"Turno de: " + juega}
                 </p>

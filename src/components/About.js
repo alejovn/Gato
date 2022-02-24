@@ -258,48 +258,45 @@ const About = (props) => {
     }
 
     return (
-        <div>
-            <div id="section4" className="menu-inicio">
-                <span className="l-br">-</span>
-                <span className="l-br">-</span>
-                <div className="menu-dos-juego">
-                    <div className="row">
-                        <div className="col-md-6">
-                            <div className="user-X">
-                                <p>{props.jugador}</p>
-                                <div className="img-jugador">
-                                    <img src="img/play.png" />
-                                </div>
-                                <p>{"partidas ganadas " + jugador1}</p>
+        <div id="section4" className="menu-inicio">
+            <div className="menu-dos-juego">
+                <div className="row">
+                    <div className="col-md-6">
+                        <div className="user-X">
+                            <p>{props.jugador}</p>
+                            <div className="img-jugador">
+                                <img src="img/play.png" />
                             </div>
-                        </div>
-                        <div className="col-md-6">
-                            <div className="user-0">
-                                <p>PC</p>
-                                <div className="img-jugador">
-                                    <img src="img/play.png" />
-                                </div>
-                                <p>{"partidas ganadas " + jugador2}</p>
-                            </div>
+                            <p>{"partidas ganadas " + jugador1}</p>
                         </div>
                     </div>
-                    <div className="row">
-                        <div className="col-md-12">
-                            <div className="board">
-                                <Board squares={board} onClick={handleClick} />
+                    <div className="col-md-6">
+                        <div className="user-0">
+                            <p>PC</p>
+                            <div className="img-jugador">
+                                <img src="img/play.png" />
                             </div>
-                        </div>
-                        <div style={styles}>
-                            <p>
-                                {"Turno de: " + juega}
-                            </p>
-                            {nuevaPartida()}
+                            <p>{"partidas ganadas " + jugador2}</p>
                         </div>
                     </div>
-
+                </div>
+                <div className="row">
+                    <div className="col-md-12">
+                        <div className="board">
+                            <Board squares={board} onClick={handleClick} />
+                        </div>
+                    </div>
+                    <div style={styles}>
+                        <p>{"Empates: " + empate}</p>
+                        <p>
+                            {"Turno de: " + juega}
+                        </p>
+                        {nuevaPartida()}
+                    </div>
                 </div>
 
             </div>
+
         </div>
     );
 }
