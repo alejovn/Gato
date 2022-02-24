@@ -84,6 +84,13 @@ const About = (props) => {
     const limpiar = () => {
         setBoard(Array(9).fill(null));
         setCont(0);
+        setValoresPosicions(
+            valoresPosicions.map((valoresPosicion) =>
+                valoresPosicion.id < 10
+                    ? { ...valoresPosicion, valor: null }
+                    : { ...valoresPosicion }
+            )
+        );
     }
     const nuevaPartida = () => {
         return (
