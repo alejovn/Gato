@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Board from '../components/Board'
+import Board from './Board'
 import { calculateWinner } from '../helpers';
 const styles = {
     white: '280px',
