@@ -277,7 +277,7 @@ body{
 
 @media screen and (max-width: 768px){
   .menu-dos-juego{
-    width: 380px;
+    width: 370px;
     height: 690px;
   }
   .menu-dos{
@@ -286,7 +286,7 @@ body{
   .menu-dos-nombre{
     padding-top: 20px;
     background-color: #8fdddd;
-    width: 380px;
+    width: 370px;
   }
   .menu-inicio{
     width: 100%;
