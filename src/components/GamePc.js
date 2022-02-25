@@ -22,7 +22,6 @@ const GamePc = (props) => {
     const [xIsNext, setXisNext] = useState(true);
     const winner = calculateWinner(board);
     const [cont, setCont] = useState(0);
-
     const [jugador1, setJugador1] = useState(0);
     const [jugador2, setJugador2] = useState(0);
     const [empate, setEmpate] = useState(0);
@@ -33,9 +32,12 @@ const GamePc = (props) => {
             setJuega(props.jugador);
         } else {
             setJuega("PC");
-            lanzarJugador2();
+            if(props.dificultad==="Facil"){
+                lanzarJugadorFacil2()
+            }else{
+                lanzarJugador2();
+            }
         }
-
         if (winner == "X") {
             alert(winner)
             alert("El ganador es: " + props.jugador);
@@ -100,6 +102,38 @@ const GamePc = (props) => {
                 </div>
             </div>
         );
+    }
+    const lanzarJugadorFacil2 = () => {
+        try {
+            let resultados = [null, null, null, null, null, null, null, null, null];
+            let clonArray = [null, null, null, null, null, null, null, null, null];
+            let conClone = 0;
+            let con = 0;
+            valoresPosicions.map((valoresPosicion) => {
+                clonArray[con] = valoresPosicion.valor;
+                con++;
+            })
+            valoresPosicions.map((valoresPosicion) => {
+                if (valoresPosicion.valor === null) {
+
+                    clonArray[conClone] = 'O';
+                    resultados[conClone] = calculoMiniMax('O', clonArray);
+                }
+                conClone++;
+            });
+
+            let min = 9999;
+            let pos = -1;
+            for (var i = 0; i < resultados.length; i++) {
+                if (resultados[i] != null && resultados[i] < min) {
+                    min = resultados[i];
+                    pos = i;
+                }
+            }
+            handleClick(pos)
+        } catch (exception) {
+            console.log(exception);
+        }
     }
     const lanzarJugador2 = () => {
         try {
