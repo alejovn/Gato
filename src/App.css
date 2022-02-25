@@ -282,10 +282,13 @@ body{
   }
   .menu-dos{
     width: 360px;
-   }
-   .menu-dos-nombre{
+  }
+  .menu-dos-nombre{
     padding-top: 20px;
     background-color: #8fdddd;
     width: 380px;
-   }
+  }
+  .menu-inicio{
+    width: 100%;
+  }
 }
