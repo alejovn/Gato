@@ -19,10 +19,11 @@ const Navbar = () => {
                             </div>
                             <div className="menu-button">
                                 <div className="btn-menu arriba">
-                                    <Link to="section1" className="btn btn-primary" smooth={true}>Persona vs Persona</Link>
+                                    <Link to="section1" className="btn btn-primary" smooth={true} data-bs-dismiss="offcanvas">Persona vs Persona</Link>
                                 </div>
                                 <div className="btn-menu">
-                                    <Link to="section2" className="btn btn-dark" smooth={true}>Persona vs Pc</Link>
+                                    <Link to="section2" className="btn btn-dark" smooth={true} data-bs-dismiss="offcanvas"
+                                    >Persona vs Pc</Link>
                                 </div>
                             </div>
                         </div>
