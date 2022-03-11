@@ -1,6 +1,6 @@
 import Navbar from './components/Navbar'
-import PlayerPersonPc from './components/PlayerPersonPc'
-import PlayerPersonPerson from './components/PlayerPersonPerson'
+import Fondo_svg from './components/Fondo_svg'
+import './css/fondo_svg.css'
 import './App.css';
 import './index.css';
 
@@ -10,8 +10,7 @@ function App() {
     <div className="App">
       <Navbar />
       <div className="App_body">
-          <PlayerPersonPerson />
-          <PlayerPersonPc />
+      <Fondo_svg />         
       </div>
     </div >
   );
