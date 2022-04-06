@@ -17,5 +17,24 @@ svg {
 
 path{
     stroke:none; 
-    fill:rgb(84, 155, 226);
+    fill:rgb(190, 196, 204);
+}
+
+.linea-habilidad{
+    border-top: 1px solid #155bdd;
+    height: 1px;
+    max-width: 100%;
+    padding: 0;
+    margin: 5px auto 0 auto;
+    -webkit-box-shadow: 0 0 5px 2px gray;
+    -moz-box-shadow: 0 0 5px 2px gray;
+    box-shadow: 0 0 5px 2px gray;
+}
+.l-br {
+    display: block;
+    color: transparent;
+}
+.h1-title{
+    color:#155bdd;
+    font-size: 30px;
 }

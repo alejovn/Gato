@@ -20,12 +20,12 @@ const UserPc = (props) => {
                     </form>
                 </div>
                 <div className="dificultad">
-                <p>Dificultad</p>  
-                <label className="switch">
-                    <input type="checkbox" className="switch-input" onClick={() => props.setCount(props.count + 1)} />
-                    <span className="switch-label" data-on="FACIL" data-off="DIFICIL"></span>
-                    <span className="switch-handle"></span>
-                </label>
+                    <p>Dificultad</p>
+                    <label className="switch">
+                        <input type="checkbox" className="switch-input" onClick={() => props.setCount(props.count + 1)} />
+                        <span className="switch-label" data-on="FACIL" data-off="DIFICIL"></span>
+                        <span className="switch-handle"></span>
+                    </label>
                 </div>
             </div>
         </div>

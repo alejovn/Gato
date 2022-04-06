@@ -14,6 +14,11 @@ const PlayerPersonPc = () => {
     });
     return (
         <div id="section2" className="menu-inicio">
+            <span className="l-br">-</span>
+            <span className="l-br">-</span>
+            <span className="l-br">-</span>
+            <h1 className="h1-title">Jugador vs Pc</h1>
+            <div className="linea-habilidad"></div>
             <div className="row">
                 <span className="l-br">-</span>
                 <span className="l-br">-</span>

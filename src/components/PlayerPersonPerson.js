@@ -7,6 +7,11 @@ const PlayerPersonPerson = () => {
     const [name2, setName2] = useState("jugador 2");
     return (
         <div id="section1" className="menu-inicio">
+            <span className="l-br">-</span>
+            <span className="l-br">-</span>
+            <span className="l-br">-</span>
+            <h1 className="h1-title">Jugador vs Jugador</h1>
+            <div className="linea-habilidad"></div>
             <div className="row">
             <span className="l-br">-</span>
             <span className="l-br">-</span>
