@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Board from './Board'
 import { calculateWinner } from '../helpers';
+import swal from 'sweetalert';
 const styles = {
     white: '280px',
     margin: '20px auto',
