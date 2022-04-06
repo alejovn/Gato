@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import Board from './Board'
 import { calculateWinner } from '../helpers';
+import swal from 'sweetalert';
 const styles = {
     white: '280px',
     margin: '20px auto',
@@ -39,17 +40,16 @@ const GamePc = (props) => {
             }
         }
         if (winner == "X") {
-            alert(winner)
-            alert("El ganador es: " + props.jugador);
+            swal("El ganador es: " + props.jugador, "Dale clic al botón", "success");
             setJugador1(jugador1 + 1);
             setCont(0);
         }
         else if (winner == "O") {
-            alert("El ganador es: PC");
+            swal("El ganador es: PC", "Dale clic al botón", "success");
             setJugador2(jugador2 + 1);
             setCont(0);
         } else if (cont === 9) {
-            alert("Empate");
+            swal("Empate", "Dale clic al botón", "success");
             setEmpate(empate + 1);
             setCont(0);
         }

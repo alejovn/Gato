@@ -32,16 +32,16 @@ const Game = (props) => {
             setJuega(props.name2);
         }
         if (winner == "X") {
-            alert("El ganador es: " + props.name1);
+            swal("El ganador es: " + props.name1, "Dale clic al botón", "success");
             setJugador1(jugador1 + 1);
             setCont(0);
         }
         else if (winner == "O") {
-            alert("El ganador es: " + props.name2);
+            swal("El ganador es: " + props.name2, "Dale clic al botón", "success");
             setJugador2(jugador2 + 1);
             setCont(0);
         } else if (cont === 9) {
-            alert("Empate");
+            swal("Empate", "Dale clic al botón", "success");
             setEmpate(empate + 1);
             setCont(0);
         }
